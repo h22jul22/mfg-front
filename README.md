@@ -1,40 +1,23 @@
-# Welcome to Remix!
+# Remix 프로젝트
 
-- 📖 [Remix docs](https://remix.run/docs)
+이 프로젝트는 Remix 프레임워크를 기반으로 한 웹 애플리케이션입니다.
 
-## Development
+## 설치 및 실행 절차
 
-Run the dev server:
+### 의존성 설치
 
-```sh
-npm run dev
+```bash
+yarn install
 ```
 
-## Deployment
+### 개발 서버 실행
 
-First, build your app for production:
-
-```sh
-npm run build
+```bash
+yarn dev
 ```
 
-Then run the app in production mode:
+### 빌드
 
-```sh
-npm start
+```bash
+yarn build
 ```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
