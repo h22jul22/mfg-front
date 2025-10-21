@@ -21,8 +21,8 @@ const MfgMain = () => {
 
   return (
     <MfgLayout employeeId='I24418'>
-      <div className='h-screen w-full p-[78px_60px_103px_60px]'>
-        <div className=''>
+      <div className='h-screen'>
+        <div className='mx-auto min-w-[780px] max-w-[1400px] p-[78px_60px_103px_60px]'>
           <h1 className='text-[35px] font-[600] leading-[40px]'>Engineer Assistant</h1>
           <p className='typography-4-regular text-grey-500 whitespace-normal pt-[16px] md:whitespace-nowrap md:pt-[24px]'>
             Engineer Assistant를 통해 장비 메뉴얼 및 일탈 발생/조치내역에 대한 정보를 대화형 챗봇 인터페이스로 빠르게

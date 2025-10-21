@@ -8,6 +8,7 @@ import { CheckboxBlack } from '~/components/ui/checkbox-black';
 
 import { ManualFile, MOCK_MANUAL_FILES } from '../const/mock-data';
 import { truncateFileName } from '../utils/file-utils';
+import { twMerge } from 'tailwind-merge';
 
 const columns = [
   { key: 'fileName', label: '파일명', width: '300px' },
@@ -99,9 +100,10 @@ const DeleteManual = () => {
                 {columns.map((col) => (
                   <th
                     key={col.key}
-                    className={`px-[10px] font-normal text-[var(--grey500)] ${
-                      col.width ? `w-[${col.width}]` : ''
-                    } text-left`}
+                    className={twMerge(
+                      'px-[10px] text-left font-normal text-[var(--grey500)]',
+                      col.width && 'w-[${col.width}]'
+                    )}
                   >
                     {col.label}
                   </th>
@@ -129,9 +131,11 @@ const DeleteManual = () => {
                     {columns.map((col) => (
                       <td
                         key={col.key}
-                        className={`px-[10px] leading-[20px] ${col.width ? `w-[${col.width}]` : ''} text-left ${
+                        className={twMerge(
+                          'px-[10px] text-left leading-[20px]',
+                          col.width && 'w-[${col.width}]',
                           col.key === 'category' && file.category === 'None' ? 'text-grey-300' : ''
-                        }`}
+                        )}
                       >
                         {col.key === 'fileName'
                           ? truncateFileName(file[col.key as keyof ManualFile] as string)

@@ -54,7 +54,9 @@ export default function MfgLayout({ children, employeeId }: MfgLayoutProps) {
                 <img className='h-[16px] w-[16px]' src='/images/gallery-vertical-end.png' alt='' />
               </div>
               <div className='flex flex-col'>
-                <span className='text-start text-[12px] font-[400]'>Engineer Assistant</span>
+                <span className='text-grey-800 text-start text-[14px] font-[600] leading-[20px]'>
+                  Engineer Assistant
+                </span>
               </div>
             </button>
           </SidebarHeader>

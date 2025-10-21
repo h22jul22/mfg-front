@@ -233,12 +233,12 @@ const MfgChatbot = () => {
             <div className='p-[8px_12px_24px]'>
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className='h-full w-full'>
-                  <div className='bg-grey-50 flex h-full w-full items-center gap-[8px] rounded-[8px] p-[8px_8px_8px_12px]'>
+                  <div className='bg-grey-50 flex h-full w-full items-center gap-[8px] rounded-[8px] p-[8px_8px_8px_16px]'>
                     <FormField
                       control={form.control}
                       name='message'
                       render={({ field }) => (
-                        <FormItem className='m-0 flex-1'>
+                        <FormItem className='m-0 flex flex-1 items-center justify-center'>
                           <FormControl>
                             <textarea
                               onKeyDown={(e) => {
@@ -247,7 +247,7 @@ const MfgChatbot = () => {
                                 }
                               }}
                               disabled={form.formState.isSubmitting}
-                              className='typography-4-regular disabled:text-grey-400 h-[24px] w-full resize-none overflow-y-auto bg-transparent outline-none'
+                              className='typography-4-regular disabled:text-grey-400 h-[24px] w-full resize-none overflow-y-auto bg-transparent pt-[2px] leading-[24px] outline-none'
                               placeholder='질문을 입력해주세요.'
                               onInput={(e) => {
                                 const target = e.currentTarget;
