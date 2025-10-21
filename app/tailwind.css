@@ -11,8 +11,6 @@ body {
   }
 }
 
-
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -48,6 +46,173 @@ body {
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Monochrome */
+    --black: #000000;
+    --grey900: #141414;
+    --grey800: #1f1f1f;
+    --grey700: #333333;
+    --grey600: #545454;
+    --grey500: #757575;
+    --grey400: #afafaf;
+    --grey300: #cbcbcb;
+    --grey200: #e2e2e2;
+    --grey100: #eeeeee;
+    --grey50: #f6f6f6;
+    --grey10: #fafafa;
+    --white: #ffffff;
+
+    /* Orange */
+    --orange950: #461e04;
+    --orange900: #843d0e;
+    --orange850: #944213;
+    --orange800: #a34a0f;
+    --orange750: #b84b0c;
+    --orange700: #c85709;
+    --orange650: #d66415;
+    --orange600: #f47725;
+    --orange550: #ff7e2e;
+    --orange500: #ff8735;
+    --orange450: #ff8f3e;
+    --orange400: #ff9646;
+    --orange350: #ff9e51;
+    --orange300: #ffa85f;
+    --orange250: #ffb072;
+    --orange200: #ffc086;
+    --orange150: #ffcb9a;
+    --orange100: #ffd5aa;
+    --orange50: #ffecdf;
+
+    /* Red */
+    --red950: #580414;
+    --red900: #761124;
+    --red850: #871523;
+    --red800: #9c102b;
+    --red750: #b0162d;
+    --red700: #c30d2f;
+    --red650: #d8142e;
+    --red600: #ea002c;
+    --red550: #f51535;
+    --red500: #fc1843;
+    --red450: #ff3758;
+    --red400: #ff496b;
+    --red350: #ff647f;
+    --red300: #ff7f97;
+    --red250: #ff9a27;
+    --red200: #ffa4b5;
+    --red150: #ff4ab5;
+    --red100: #ffc1cd;
+    --red50: #ffeaee;
+
+    /* Blue */
+    --blue950: #00365e;
+    --blue900: #0d4670;
+    --blue850: #0c5487;
+    --blue800: #0e619f;
+    --blue750: #0a6eb6;
+    --blue700: #0072c6;
+    --blue650: #0580d4;
+    --blue600: #0785e2;
+    --blue550: #1892ec;
+    --blue500: #259df6;
+    --blue450: #3daafb;
+    --blue400: #49b0fc;
+    --blue350: #6bc5ff;
+    --blue300: #8bceff;
+    --blue250: #9ed6ff;
+    --blue200: #a7daff;
+    --blue150: #bce3ff;
+    --blue100: #c6e7ff;
+    --blue50: #f1f9ff;
+
+    /* Teal */
+    --teal950: #003231;
+    --teal900: #004744;
+    --teal850: #005554;
+    --teal800: #00625e;
+    --teal750: #00706d;
+    --teal700: #007f79;
+    --teal650: #008d85;
+    --teal600: #009a93;
+    --teal550: #00a79e;
+    --teal500: #00b3aa;
+    --teal450: #23c0b6;
+    --teal400: #33c3bd;
+    --teal350: #4fd0ca;
+    --teal300: #66d4cf;
+    --teal250: #82dfdb;
+    --teal200: #99e4e1;
+    --teal150: #b3eeec;
+    --teal100: #ccf3f3;
+    --teal50: #f0fcfc;
+
+    /* Purple */
+    --purple950: #2d0533;
+    --purple900: #4a0a5a;
+    --purple850: #5b0e6c;
+    --purple800: #68127a;
+    --purple750: #7b1a8a;
+    --purple700: #8b1d9d;
+    --purple650: #9d27ab;
+    --purple600: #a930b7;
+    --purple550: #b93ec6;
+    --purple500: #c14acf;
+    --purple450: #cd5dda;
+    --purple400: #d372e1;
+    --purple350: #de8eeb;
+    --purple300: #e599f0;
+    --purple250: #edaaf5;
+    --purple200: #f0baf8;
+    --purple150: #f5d0fb;
+    --purple100: #f7d8fb;
+    --purple50: #fbf0fd;
+
+    /* UI Red */
+    --ui-red950: #5d0a05;
+    --ui-red900: #781712;
+    --ui-red800: #a21810;
+    --ui-red700: #c7180e;
+    --ui-red600: #ea0e01;
+    --ui-red500: #fc2c20;
+    --ui-red400: #ff5249;
+    --ui-red300: #ff7e77;
+    --ui-red200: #ffa7a2;
+    --ui-red100: #ffccc9;
+    --ui-red50: #fcf0ef;
+
+    /* UI Yellow */
+    --ui-yellow950: #5b4d05;
+    --ui-yellow900: #7c6b12;
+    --ui-yellow800: #a99111;
+    --ui-yellow700: #c9ac10;
+    --ui-yellow600: #e6c100;
+    --ui-yellow500: #ffd600;
+    --ui-yellow400: #ffe040;
+    --ui-yellow300: #ffe974;
+    --ui-yellow200: #ffee94;
+    --ui-yellow100: #fff3b7;
+    --ui-yellow50: #fffce1;
+
+    /* UI Green */
+    --ui-green950: #065808;
+    --ui-green900: #107612;
+    --ui-green800: #0fac13;
+    --ui-green700: #12c517;
+    --ui-green600: #00e106;
+    --ui-green500: #00f007;
+    --ui-green400: #41ff46;
+    --ui-green300: #74ff78;
+    --ui-green200: #a2ffa4;
+    --ui-green100: #c9ffca;
+    --ui-green50: #f4fff4;
+
+    /* shadow */
+    --popup: 0px 8px 32px rgba(0, 0, 0, 0.05);
+    --fab: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    --bnb: 0px -2px 15px rgba(0, 0, 0, 0.1);
+    --pin: 0px 2px 3px rgba(0, 0, 0, 0.25);
+    --toggle: 0px 2px 7px rgba(0, 0, 0, 0.1);
+    --toast: 0px 8px 32px rgba(0, 0, 0, 0.15);
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -84,8 +249,6 @@ body {
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
-
-
 
 @layer base {
   * {
