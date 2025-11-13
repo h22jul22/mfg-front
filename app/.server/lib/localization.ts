@@ -1,4 +1,4 @@
-import { resolveAcceptLanguage, type MatchType } from 'resolve-accept-language';
+import { resolveAcceptLanguage } from 'resolve-accept-language';
 
 import { DEFAULT_LANGUAGE, LANGUAGES } from '~/common/constants';
 

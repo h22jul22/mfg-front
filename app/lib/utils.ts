@@ -99,3 +99,15 @@ export const getClientIP = (request: Request): string => {
   // IP를 찾을 수 없는 경우
   return 'unknown';
 };
+
+// 쿠키 읽기
+export function getCookie(name: string) {
+  if (typeof document === 'undefined') return '';
+  const m = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/([.$?*|{}()[\]\\/+^])/g, '\\$1') + '=([^;]*)'));
+  return m ? decodeURIComponent(m[1]) : '';
+}
+
+// 토큰 가져오기
+export function getAuthToken(): string | null {
+  return getCookie('accessToken') || localStorage.getItem('accessToken') || null;
+}

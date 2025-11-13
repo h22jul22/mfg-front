@@ -1,9 +1,9 @@
-//import { LoaderFunctionArgs } from '@remix-run/node';
+import { LoaderFunctionArgs } from '@remix-run/node';
 import { Link, useLoaderData, useParams } from '@remix-run/react';
 
-//import { getEmployeeIdCookie } from '~/.server/lib/utils';
+import { getEmployeeIdCookie } from '~/.server/lib/utils';
 import MfgLayout from '~/components/mfg-layout';
-//import { RetryBtn } from '~/components/ui/retry-btn';
+import { RetryBtn } from '~/components/ui/retry-btn';
 import { cn } from '~/lib/utils';
 
 import DeleteManual from './components/delete-manual';
@@ -11,20 +11,20 @@ import UploadAccident from './components/upload-accident';
 import UploadManual from './components/upload-manual';
 import UploadMaster from './components/upload-master';
 
-// export const loader = async ({ request }: LoaderFunctionArgs) => {
-//   const cookie = request.headers.get('Cookie');
-//   const employeeId: string = getEmployeeIdCookie(cookie);
+export const loader = async ({ request }: LoaderFunctionArgs) => {
+  const cookie = request.headers.get('Cookie');
+  const employeeId: string = getEmployeeIdCookie(cookie);
 
-//   return { employeeId };
-// };
+  return { employeeId };
+};
 
 const MfgMain = () => {
   const { type } = useParams();
-  // const { employeeId } = useLoaderData<typeof loader>();
-  // if (!employeeId) return <RetryBtn />;
+  const { employeeId } = useLoaderData<typeof loader>();
+  if (!employeeId) return <RetryBtn />;
 
   return (
-    <MfgLayout employeeId='I24418'>
+    <MfgLayout employeeId={employeeId}>
       <div className='mx-auto flex min-w-[780px] max-w-[1400px] flex-col gap-10 px-[60px] py-[46px]'>
         <h1 className='text-[35px] font-[600] leading-[40px]'>메뉴얼 데이터 업데이트</h1>
         <section>

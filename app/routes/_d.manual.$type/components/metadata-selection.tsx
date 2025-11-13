@@ -1,5 +1,3 @@
-import { ChevronDown } from 'lucide-react';
-
 import Check from '~/components/icons/check';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '~/components/ui/select';
 
@@ -27,7 +25,7 @@ export default function MetadataSelection({ metadata, onMetadataChange }: Metada
     <div className='w-full max-w-[750px] space-y-[28px]'>
       {/* 언어 - 1줄 */}
       <div className='flex flex-col gap-2'>
-        <label htmlFor='language' className='text-grey-700 text-[14px] font-[500]'>
+        <label htmlFor='language' className='text-[14px] font-[500] text-grey-700'>
           언어
         </label>
         <Select value={metadata.language} onValueChange={(value) => handleMetadataChange('language', value)}>
@@ -37,7 +35,6 @@ export default function MetadataSelection({ metadata, onMetadataChange }: Metada
                 ? LANGUAGE_OPTIONS.find((opt) => opt.value === metadata.language)?.label
                 : '언어를 선택하세요'}
             </SelectValue>
-            <ChevronDown className='h-4 w-4 opacity-50' />
           </SelectTrigger>
           <SelectContent className='max-h-[180px] w-full overflow-y-auto p-1'>
             {LANGUAGE_OPTIONS.map((option) => (
@@ -59,7 +56,7 @@ export default function MetadataSelection({ metadata, onMetadataChange }: Metada
       {/* 구분, 설명, 실번호 - 3줄 */}
       <div className='grid grid-cols-3 gap-4'>
         <div className='flex flex-col gap-2'>
-          <label htmlFor='category' className='text-grey-700 text-[14px] font-[500]'>
+          <label htmlFor='category' className='text-[14px] font-[500] text-grey-700'>
             구분
           </label>
           <Select value={metadata.category} onValueChange={(value) => handleMetadataChange('category', value)}>
@@ -69,7 +66,6 @@ export default function MetadataSelection({ metadata, onMetadataChange }: Metada
                   ? CATEGORY_OPTIONS.find((opt) => opt.value === metadata.category)?.label
                   : '구분을 선택하세요'}
               </SelectValue>
-              <ChevronDown className='h-4 w-4 opacity-50' />
             </SelectTrigger>
             <SelectContent className='max-h-[180px] w-full overflow-y-auto p-1'>
               {CATEGORY_OPTIONS.map((option) => (
@@ -89,7 +85,7 @@ export default function MetadataSelection({ metadata, onMetadataChange }: Metada
         </div>
 
         <div className='flex flex-col gap-2'>
-          <label htmlFor='description' className='text-grey-700 text-[14px] font-[500]'>
+          <label htmlFor='description' className='text-[14px] font-[500] text-grey-700'>
             설명
           </label>
           <Select value={metadata.description} onValueChange={(value) => handleMetadataChange('description', value)}>
@@ -99,7 +95,6 @@ export default function MetadataSelection({ metadata, onMetadataChange }: Metada
                   ? ROOM_OPTIONS.find((opt) => opt.value === metadata.description)?.label
                   : '설명을 선택하세요'}
               </SelectValue>
-              <ChevronDown className='h-4 w-4 opacity-50' />
             </SelectTrigger>
             <SelectContent className='max-h-[180px] w-full overflow-y-auto p-1'>
               {ROOM_OPTIONS.map((option) => (
@@ -119,7 +114,7 @@ export default function MetadataSelection({ metadata, onMetadataChange }: Metada
         </div>
 
         <div className='flex flex-col gap-2'>
-          <label htmlFor='roomNumber' className='text-grey-700 text-[14px] font-[500]'>
+          <label htmlFor='roomNumber' className='text-[14px] font-[500] text-grey-700'>
             실번호
           </label>
           <Select value={metadata.roomNumber} onValueChange={(value) => handleMetadataChange('roomNumber', value)}>
@@ -129,7 +124,6 @@ export default function MetadataSelection({ metadata, onMetadataChange }: Metada
                   ? ROOM_NUMBER_OPTIONS.find((opt) => opt.value === metadata.roomNumber)?.label
                   : '실번호를 선택하세요'}
               </SelectValue>
-              <ChevronDown className='h-4 w-4 opacity-50' />
             </SelectTrigger>
             <SelectContent className='max-h-[180px] w-full overflow-y-auto p-1'>
               {ROOM_NUMBER_OPTIONS.map((option) => (
@@ -152,7 +146,7 @@ export default function MetadataSelection({ metadata, onMetadataChange }: Metada
       {/* 장비명, 장비번호 - 2줄 */}
       <div className='grid grid-cols-2 gap-4'>
         <div className='flex flex-col gap-2'>
-          <label htmlFor='equipmentName' className='text-grey-700 text-[14px] font-[500]'>
+          <label htmlFor='equipmentName' className='text-[14px] font-[500] text-grey-700'>
             장비명
           </label>
           <Select
@@ -165,7 +159,6 @@ export default function MetadataSelection({ metadata, onMetadataChange }: Metada
                   ? EQUIPMENT_NAME_OPTIONS.find((opt) => opt.value === metadata.equipmentName)?.label
                   : '장비명을 선택하세요'}
               </SelectValue>
-              <ChevronDown className='h-4 w-4 opacity-50' />
             </SelectTrigger>
             <SelectContent className='max-h-[180px] w-full overflow-y-auto p-1'>
               {EQUIPMENT_NAME_OPTIONS.map((option) => (
@@ -185,7 +178,7 @@ export default function MetadataSelection({ metadata, onMetadataChange }: Metada
         </div>
 
         <div className='flex flex-col gap-2'>
-          <label htmlFor='equipmentNumber' className='text-grey-700 text-[14px] font-[500]'>
+          <label htmlFor='equipmentNumber' className='text-[14px] font-[500] text-grey-700'>
             장비번호
           </label>
           <Select
@@ -198,7 +191,6 @@ export default function MetadataSelection({ metadata, onMetadataChange }: Metada
                   ? EQUIPMENT_NUMBER_OPTIONS.find((opt) => opt.value === metadata.equipmentNumber)?.label
                   : '장비번호를 선택하세요'}
               </SelectValue>
-              <ChevronDown className='h-4 w-4 opacity-50' />
             </SelectTrigger>
             <SelectContent className='max-h-[180px] w-full overflow-y-auto p-1'>
               {EQUIPMENT_NUMBER_OPTIONS.map((option) => (
